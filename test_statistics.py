@@ -1,5 +1,5 @@
 from unittest import TestCase
-from statistics import variance
+from statistics import variance, stdev
 
 
 class StatisticsTest(TestCase):
@@ -15,6 +15,9 @@ class StatisticsTest(TestCase):
         with self.assertRaises(ValueError):
             var = variance([])
 
+    def test_stdev(self):
+        self.assertEqual(0.0, stdev([10, 10, 10]))
+        self.assertEqual(2.0, stdev([10, 14]))
 
 if __name__ == '__main__':
     import unittest
