@@ -1,5 +1,6 @@
 Continuous Integration Demo
 ============================
+![unittest](https://github.com/RyukungG/demo-pyci/blob/main/.github/workflows/python-app.yml)
 
 This project demonstrates use of Github Actions to build and test a Python project.  
 Create a repository on Github, then use Github Actions to build and test it.
